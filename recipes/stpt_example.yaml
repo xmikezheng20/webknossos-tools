@@ -1,0 +1,18 @@
+source_root: /mnt/nas_s1d1/Mike/stpt/261009_MikeZ_CO4B_M_PAG_antero_01/processed/reconstruction/03_reconstruction/production/stitched
+
+# Development output, relative to the repository root.
+output: data/261009_MikeZ_CO4B_M_PAG_antero_01
+
+# Input axes: slice, TIFF row, TIFF column.
+# Spacing follows the same axis order as input_orientation.
+input_orientation: ars
+input_voxel_size_um: [50, 1, 1]
+
+# Optional; omit to retain native orientation.
+output_orientation: asr
+
+layers:
+  red: ch01_red/*.tif
+  green: ch02_green/*.tif
+
+jobs: 2
